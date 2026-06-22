@@ -30,38 +30,10 @@
             <p class="mt-2 text-red-400 font-semibold tracking-wide uppercase text-sm">Status: Private Runway, Permission required to land</p>
         </header>
 
-        <!-- Top Row: Field Info & Live Conditions -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
-            
-            <!-- Field Info Card -->
-            <div class="lg:col-span-1 bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 h-full">
-                <h2 class="text-xl font-semibold text-white mb-4 flex items-center">
-                    <svg class="w-5 h-5 mr-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Field Information
-                </h2>
-                <ul class="space-y-3 text-sm">
-                    <li class="flex justify-between"><span class="text-slate-400">Runways</span> <span class="font-medium text-white">10/28</span></li>
-                    <li class="flex justify-between"><span class="text-slate-400">Length</span> <span class="font-medium text-white">2,940 ft</span></li>
-                    <li class="flex justify-between"><span class="text-slate-400">Width</span> <span class="font-medium text-white">50 ft</span></li>
-                    <li class="flex justify-between"><span class="text-slate-400">Surface</span> <span class="font-medium text-white">Asphalt</span></li>
-                </ul>
-
-                <div class="mt-6 pt-6 border-t border-slate-700">
-                    <h3 class="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">Management</h3>
-                    <div class="text-sm mb-4">
-                        <span class="block text-white">Kevin Bentley</span>
-                        <a href="tel:2088904472" class="text-blue-400 hover:text-blue-300">(208) 890-4472</a>
-                    </div>
-                    <h3 class="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">Owner</h3>
-                    <div class="text-sm">
-                        <span class="block text-white">RED BARON ESTATES PILOTS & HOA</span>
-                        <span class="block text-slate-400">OASIS, ID 83647</span>
-                    </div>
-                </div>
-            </div>
-
+        <!-- Top Row: Live Conditions -->
+        <div class="mb-8">
             <!-- WeatherLink -->
-            <div class="lg:col-span-2 bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 h-full">
+            <div class="bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 h-full">
                 <h2 class="text-xl font-semibold text-white mb-4">Live Conditions</h2>
                 
                 <!-- Mobile Widget (Slim) -->
@@ -156,8 +128,38 @@ KMUO 222255Z 00000KT 6SM HZ CLR 32/M06 A2995
             <p class="text-xs text-slate-500 mt-3 text-right">Updated daily</p>
         </div>
 
-        <!-- Bottom Row: Images -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Bottom Section: Field Info & Images -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <!-- Field Info Card -->
+            <div class="lg:col-span-1 bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 h-full">
+                <h2 class="text-xl font-semibold text-white mb-4 flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Field Information
+                </h2>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex justify-between"><span class="text-slate-400">Runways</span> <span class="font-medium text-white">10/28</span></li>
+                    <li class="flex justify-between"><span class="text-slate-400">Length</span> <span class="font-medium text-white">2,940 ft</span></li>
+                    <li class="flex justify-between"><span class="text-slate-400">Width</span> <span class="font-medium text-white">50 ft</span></li>
+                    <li class="flex justify-between"><span class="text-slate-400">Surface</span> <span class="font-medium text-white">Asphalt</span></li>
+                </ul>
+
+                <div class="mt-6 pt-6 border-t border-slate-700">
+                    <h3 class="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">Management</h3>
+                    <div class="text-sm mb-4">
+                        <span class="block text-white">Kevin Bentley</span>
+                        <a href="tel:2088904472" class="text-blue-400 hover:text-blue-300">(208) 890-4472</a>
+                    </div>
+                    <h3 class="text-sm font-medium text-slate-400 uppercase tracking-wider mb-2">Owner</h3>
+                    <div class="text-sm">
+                        <span class="block text-white">RED BARON ESTATES PILOTS & HOA</span>
+                        <span class="block text-slate-400">OASIS, ID 83647</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Images (Spanning 2 columns) -->
+            <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-slate-800 rounded-xl p-4 shadow-lg border border-slate-700">
                 <h3 class="text-sm font-medium text-slate-400 uppercase tracking-wider mb-3">VFR Chart</h3>
                 <a href="vfr-chart.jpg" target="_blank">
@@ -169,6 +171,9 @@ KMUO 222255Z 00000KT 6SM HZ CLR 32/M06 A2995
                 <a href="1id4-naip.jpg" target="_blank">
                     <img src="1id4-naip.jpg" alt="Satellite Imagery" class="w-full h-auto rounded border border-slate-700 hover:opacity-90 transition-opacity">
                 </a>
+            </div>
+        </div>
+        
             </div>
         </div>
         
