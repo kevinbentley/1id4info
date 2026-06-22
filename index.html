@@ -63,8 +63,15 @@
             <!-- WeatherLink -->
             <div class="lg:col-span-2 bg-slate-800 rounded-xl p-6 shadow-lg border border-slate-700 h-full">
                 <h2 class="text-xl font-semibold text-white mb-4">Live Conditions</h2>
-                <div class="w-full flex justify-center rounded-lg overflow-hidden bg-slate-900 py-4">
+                
+                <!-- Mobile Widget (Slim) -->
+                <div class="w-full flex justify-center rounded-lg overflow-hidden bg-slate-900 py-4 block lg:hidden">
                     <iframe src="https://www.weatherlink.com/embeddablePage/show/8d05e1adafef48269ebd85183311d91a/slim" width="338" height="500" frameborder="0"></iframe>
+                </div>
+
+                <!-- Desktop Widget (Wide) -->
+                <div class="w-full rounded-lg overflow-hidden bg-slate-900 h-[480px] hidden lg:block">
+                    <iframe src="https://www.weatherlink.com/embeddablePage/show/8d05e1adafef48269ebd85183311d91a/wide" class="w-full h-full" frameborder="0"></iframe>
                 </div>
             </div>
 
